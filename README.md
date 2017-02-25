@@ -26,5 +26,4 @@ node index.js
  1. Button B - starts the presentation.
  1. Button A - stops the presentation.
  1. Gestures
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NR33BaVSFnI?ecver=1" frameborder="0" allowfullscreen></iframe>
-
+[![Demo](https://img.youtube.com/vi/NR33BaVSFnI/0.jpg)](https://www.youtube.com/watch?v=NR33BaVSFnI)

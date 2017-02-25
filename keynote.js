@@ -4,20 +4,23 @@
 * Author: Humberto Rodriguez Avila
 *
 */
-var osascript = require('applescript');
+var Osascript = require('applescript');
 
 /*  the keynote API constructor  */
 var Keynote = function () {};
 
+/*  starts the presentation or shows the next slide  */
 Keynote.prototype.startOrNext = function () { 
-   osascript.execFile('./scripts/startOrNext.scpt', function(err, result){
+   Osascript.execFile('./scripts/startOrNext.scpt', function(err, result){
     if (err) return console.error(err);});
 };
 
+/*  shows the previous slide  */
 Keynote.prototype.prev = function () { 
-    osascript.execFile('./scripts/prev.scpt', function(err, result){
+    Osascript.execFile('./scripts/prev.scpt', function(err, result){
     if (err) return console.error(err);});
 };
+
 
 /*  export the API  */
 module.exports = Keynote;

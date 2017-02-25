@@ -1,7 +1,7 @@
 {
   "name": "mbit-keynote-plus",
   "version": "0.0.1",
-  "description": "Control your Keynote presentation with your micro:bit buttons and predefine gestures.",
+  "description": "Control your Keynote presentation with the buttons of your micro:bit and predefine gestures.",
   "main": "index.js",
   "repository": {
     "type": "git",

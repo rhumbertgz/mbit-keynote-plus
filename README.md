@@ -1,5 +1,5 @@
 # mbit-keynote
-Control your Keynote presentation with your micro:bit buttons and predefine gestures.
+Control your Keynote presentation with the buttons of your micro:bit and predefine gestures.
 
 ## Prerequisites
 

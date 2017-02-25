@@ -1,5 +1,5 @@
 # mbit-keynote
-Control your Keynote presentation with a BBC micro:bit using [node-bbc-microbit](https://github.com/sandeepmistry/node-bbc-microbit)
+Control your Keynote presentation with your micro:bit buttons and predefine gestures.
 
 ## Prerequisites
 
@@ -25,5 +25,7 @@ node index.js
 * Control your presentation using fist-based gestures and buttons. 
  1. Button B - starts the presentation.
  1. Button A - stops the presentation.
+ 1. 
+ 1.
  
 

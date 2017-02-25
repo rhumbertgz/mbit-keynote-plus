@@ -10,8 +10,8 @@
 */
 
 var BBCMicrobit = require('bbc-microbit');
-var KeynoteAPI = require("./keynote");
-var TimerAPI = require("./timer");
+var KeynoteAPI = require("./lib/keynote");
+var TimerAPI = require("./lib/timer");
 
 var keynote = new KeynoteAPI();
 var timer = new TimerAPI();

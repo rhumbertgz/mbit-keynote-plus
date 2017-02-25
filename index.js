@@ -33,28 +33,34 @@ BBCMicrobit.discover(function(microbit) {
       zf = z.toFixed(1);
       if((xf >= -0.3 && xf <= 0.3) && (yf >= -0.2 && yf <= 0.2) ){
         if(zf == -1 ){
-         console.log('Next Slide');
-          keynote.startOrNext();
+          keynote.next();
         }else if(zf == 1){
-          console.log('Prev Slide');
-          keynote.prev();
-          
+          keynote.prev(); 
         } 
       } 
     }
-   
-    
+   });
+
+  microbit.on('buttonAChange', function(value) {
+    if(value == 1) {
+      console.log('Stopping presentation...');
+      keynote.stop();}
+  });
+
+  microbit.on('buttonBChange', function(value) {
+    if(value == 1) {
+      console.log('Starting presentation...');
+      keynote.start();
+    }
   });
 
   console.log('Connecting microbit...');
   microbit.connectAndSetUp(function() {
     console.log('Status: Connected');
     console.log('Initializing...');
+    microbit.subscribeButtons(function(){});
     microbit.writeAccelerometerPeriod(period, function() {
-      console.log('Setting accelerometer...');
-      microbit.subscribeAccelerometer(function() {
-        console.log('Subscribed to accelerometer');
-      });
+       microbit.subscribeAccelerometer(function() {});
     });
     console.log('Ready!');
     microbit.writeLedText('Ready!', function(){});

@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/rhumbertgz/mbit-keynote-plus.git",
   "dependencies": {
+    "applescript": "1.0.0",
     "bbc-microbit": "0.1.0",
-    "applescript":"1.0.0"    
+    "time": "^0.11.4"
   }
 }

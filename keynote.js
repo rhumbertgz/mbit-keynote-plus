@@ -10,8 +10,20 @@ var Osascript = require('applescript');
 var Keynote = function () {};
 
 /*  starts the presentation or shows the next slide  */
-Keynote.prototype.startOrNext = function () { 
-   Osascript.execFile('./scripts/startOrNext.scpt', function(err, result){
+Keynote.prototype.start = function () { 
+   Osascript.execFile('./scripts/start.scpt', function(err, result){
+    if (err) return console.error(err);});
+};
+
+/*  stops the presentation */
+Keynote.prototype.stop = function () { 
+   Osascript.execFile('./scripts/stop.scpt', function(err, result){
+    if (err) return console.error(err);});
+};
+
+/*  shows the next slide  */
+Keynote.prototype.next = function () { 
+   Osascript.execFile('./scripts/next.scpt', function(err, result){
     if (err) return console.error(err);});
 };
 
